@@ -144,7 +144,6 @@ Le portfolio est organisé en **5 sections principales** accessibles via la navi
 ## 🎨 Éléments interactifs
 
 ### Animations
-- ⭐ **Starfield** : Fond animé avec étoiles scintillantes
 - 🎯 **Curseur personnalisé** : Suivi du curseur et points
 - 🔄 **Animations au scroll** : Transitions fluides des sections
 - ✨ **Hover effects** : Interactions sur les cartes et boutons
@@ -171,8 +170,6 @@ Contient les images statiques et icônes :
 - `chine.png` — Favicon
 - `grp.jpg` — Image projet YOASOBI
 - `glpi.jpg` — Image projet GLPI
-- `jss.jpg` — Image supplémentaire
-- `2.jpg` — Image supplémentaire
 
 ### `/cards/`
 Captures d'écran des projets pour les modales :
