@@ -252,7 +252,7 @@ form.addEventListener('submit', async (e) => {
 });
 
 // ---- ENTRANCE ANIMATIONS on scroll ----
-const fadeEls = document.querySelectorAll('.project-card, .trait-card, .contact-card');
+const fadeEls = document.querySelectorAll('.project-card, .trait-card, .contact-card, .certification-card');
 const fadeObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
@@ -278,7 +278,7 @@ const applyFade = (el) => {
 };
 
 // Re-implement with direct style application
-const cards = document.querySelectorAll('.project-card, .trait-card, .contact-card');
+const cards = document.querySelectorAll('.project-card, .trait-card, .contact-card, .certification-card');
 const cardObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -424,6 +424,28 @@ boutikModalClose.addEventListener('click', () => {
 boutikModal.addEventListener('click', (e) => {
     if (e.target === boutikModal) {
         boutikModal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// ---- MODAL: EMOJI PROJECT ----
+const emojiProject = document.getElementById('emojiProject');
+const emojiModal = document.getElementById('emojiModal');
+const emojiModalClose = document.getElementById('emojiModalClose');
+
+emojiProject.addEventListener('click', () => {
+    emojiModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+});
+
+emojiModalClose.addEventListener('click', () => {
+    emojiModal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+});
+
+emojiModal.addEventListener('click', (e) => {
+    if (e.target === emojiModal) {
+        emojiModal.classList.remove('active');
         document.body.style.overflow = 'auto';
     }
 });
