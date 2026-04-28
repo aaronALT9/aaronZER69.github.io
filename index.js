@@ -428,6 +428,28 @@ boutikModal.addEventListener('click', (e) => {
     }
 });
 
+// ---- MODAL: COINMOBILE PROJECT ----
+const coinProject = document.getElementById('coinProject');
+const coinModal = document.getElementById('coinModal');
+const coinModalClose = document.getElementById('coinModalClose');
+
+coinProject.addEventListener('click', () => {
+    coinModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+});
+
+coinModalClose.addEventListener('click', () => {
+    coinModal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+});
+
+coinModal.addEventListener('click', (e) => {
+    if (e.target === coinModal) {
+        coinModal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+});
+
 // ---- MODAL: EMOJI PROJECT ----
 const emojiProject = document.getElementById('emojiProject');
 const emojiModal = document.getElementById('emojiModal');
